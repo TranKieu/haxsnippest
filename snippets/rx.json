@@ -1,0 +1,12 @@
+{
+  "Rxjs-catchError": {
+    "prefix": "rx-catchError",
+    "body": ["catchError($1)"],
+    "description": "catchError"
+  },
+  "Rxjs-shareReplay": {
+    "prefix": "rx-shareReplay",
+    "body": ["shareReplay($1)"],
+    "description": "shareReplay"
+  }
+}

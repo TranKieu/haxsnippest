@@ -1,0 +1,56 @@
+{
+  "Angular-header-form": {
+    "prefix": "ng-header-form",
+    "body": [
+      "headers: new HttpHeaders({'Content-Type': 'application/x-www-form-urlencoded'})$2"
+    ],
+    "description": " HttpHeader"
+  },
+  "Angular-header-json": {
+    "prefix": "ng-header-json",
+    "body": [
+      "headers: new HttpHeaders({ 'Content-Type': 'application/json' })$2"
+    ],
+    "description": "HttpHeader"
+  },
+  "Angular-HostListener-mouse": {
+    "prefix": "ng-host-mouse",
+    "body": [
+      "@HostListener('mouseenter')",
+      "onMouseEnter() {",
+      "\t $1 ",
+      "}",
+      "@HostListener('mouseleave')",
+      "onMouseLeave() {",
+      "\t $1",
+      "}"
+    ],
+    "description": "HostListener"
+  },
+  "Angular-RouterDefinition": {
+    "prefix": "ng-router-path",
+    "body": ["{", "\t path: '$1',", "\t component: ${2:Component} ", "$3}"],
+    "description": "RouterDefinition"
+  },
+  "Angular-Router-Lazy": {
+    "prefix": "ng-router-child",
+    "body": [
+      "{",
+      "\t path: '$1',",
+      "\tloadChildren: () => import('${2:lazy-path}').then(m => m.${3:lazy-module})",
+      "}$4"
+    ],
+    "description": "Lazyloading route path"
+  },
+  "Provider forwardRef": {
+    "prefix": "ng-provide-for",
+    "body": [
+      "export const $1: Provider = {",
+      "\tprovide: NG_${2:VALUE_ACCESSOR},",
+      "\tuseExisting: forwardRef(() => $3),",
+      "\tmulti: true",
+      "}"
+    ],
+    "description": "Provider forwardRef"
+  }
+}

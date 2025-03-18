@@ -1,0 +1,14 @@
+package-lock.json
+node_modules/
+.evn
+environment.ts
+environments
+bin/
+dist/
+.vscodeignore
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+.nx
+.angular

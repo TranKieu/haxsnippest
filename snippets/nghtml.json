@@ -1,0 +1,135 @@
+{
+  "Hexagon": {
+    "prefix": "svg-hax",
+    "body": [
+      "<svg xmlns=\"http://www.w3.org/2000/svg\" ",
+      "viewBox=\"0 0 64 64\"    >",
+      "<polygon   stroke=\"$1\"  fill=\"none\" ",
+      "points=\"10,19.3 32,6.6 54,19.3 54,44.7 32,57.4 10,44.7\" />",
+      "</svg>"
+    ],
+    "description": "Hexagon svg"
+  },
+  "Angular Interpolation": {
+    "prefix": "ng-inter",
+    "body": ["{{$1}}"],
+    "description": "String Interpolation"
+  },
+  "Angular Link Active Options": {
+    "prefix": "ng-link-option",
+    "body": ["[routerLinkActiveOptions]='{exact : true}'$1"],
+    "description": "Router Link Action Options"
+  },
+  "Angular-Router-Outlet": {
+    "prefix": "ng-outlet",
+    "body": ["<router-outlet></router-outlet>$1"],
+    "description": "router-outlet"
+  },
+  "Angular Form updateOn": {
+    "prefix": "ng-UpdateOn",
+    "body": ["[ngModelOptions]='{updateOn : \"blur\"}'$1"],
+    "description": "ngModelOptions"
+  },
+  "Angular Reactive Form": {
+    "prefix": "ng-reative",
+    "body": [
+      "<form [formGroup]=\"${1:form}\" (ngSubmit)=\"onSubmit()$2\">$3</form>"
+    ],
+    "description": "Reactve Form"
+  },
+  "Angular Template-driven Form": {
+    "prefix": "ng-template",
+    "body": [
+      "<form novalidate #${1:form}='ngForm' (ngSubmit)='onSubmit(${2:form}.value)'>$3</form>"
+    ],
+    "description": "Template-driven Form"
+  },
+  "Material Button": {
+    "prefix": "mat-button",
+    "description": "Material Button",
+    "types": "typescript, html",
+    "body": ["<button mat-${1:raised-}button>${2:text}</button>$0"]
+  },
+  "Material Expansion Panel ": {
+    "prefix": "mat-expansion-panel",
+    "description": "Material Expansion Panel",
+    "types": "typescript, html",
+    "body": [
+      "<mat-expansion-panel ${hideToggle}>",
+      "\t<mat-expansion-panel-header>",
+      "\t\t${title}",
+      "\t</mat-expansion-panel-header>",
+      "\t${content}",
+      "</mat-expansion-panel>$0"
+    ]
+  },
+  "Material Accordion Panel ": {
+    "prefix": "mat-accordion>",
+    "description": "Material Accordion",
+    "types": "typescript, html",
+    "body": [
+      "<mat-accordion>",
+      "\t<mat-expansion-panel>",
+      "\t\t<mat-expansion-panel-header>",
+      "\t\t\t${title}",
+      "\t\t</mat-expansion-panel-header>",
+      "\t\t${content}",
+      "\t</mat-expansion-panel>",
+      "\t$1",
+      "</mat-accordion>$0"
+    ]
+  },
+  "Material Card": {
+    "prefix": "mat-card",
+    "description": "Material Card",
+    "types": "typescript, html",
+    "body": [
+      "<mat-card>",
+      "\t<mat-card-header>",
+      "\t\t<mat-card-title>${title}</mat-card-title>",
+      "\t\t<mat-card-subtitle>${subtitle}</mat-card-subtitle>",
+      "\t</mat-card-header>",
+      "\t<mat-card-content>",
+      "\t$1",
+      "\t</mat-card-content>",
+      "\t<mat-card-actions>",
+      "\t\t<button mat-button>${Ok}</button>",
+      "\t</mat-card-actions>",
+      "</mat-card>$0"
+    ]
+  },
+  "Material Badge": {
+    "prefix": "matBadge",
+    "description": "Material Badge",
+    "types": "typescript, html",
+    "body": [
+      "matBadge=\"${number}\"",
+      "\tmatBadgePosition=\"${2|above,below|} ${3|after,before|}\"",
+      "\tmatBadgeColor=\"accent\"$0"
+    ]
+  },
+  "Material Dialog": {
+    "prefix": "mat-dialog",
+    "description": "Material Dialog Component",
+    "types": "typescript, html",
+    "body": [
+      "<h1 mat-dialog-title>${1:titel}</h1>",
+      "<mat-dialog-content>",
+      "\t${2:content}",
+      "</mat-dialog-content>",
+      "<mat-dialog-actions>",
+      "\t<button mat-button cdkFocusInitial mat-dialog-close=$4 >${3:Ok}</button>$5",
+      "</mat-dialog-actions>$0"
+    ]
+  },
+  "Material Input": {
+    "prefix": "matInput",
+    "description": "Material Input Textbox",
+    "types": "typescript, html",
+    "body": [
+      "<mat-form-field appearance=\"${legacy|outline|fill}\">",
+      "\t<input matInput placeholder=\"${label}\" ormControlName=\"${name}\">",
+      "</mat-form-field>$0"
+    ]
+  }
+}

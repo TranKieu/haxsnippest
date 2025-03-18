@@ -1,0 +1,50 @@
+{
+  "name": "hax-snippets",
+  "displayName": "Snippets",
+  "description": "Snippets",
+  "version": "0.1.0",
+  "publisher": "hax",
+  "icon": "ng.png",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescript",
+        "path": "./snippets/ngts.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/exnode.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/rx.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/nghtml.json"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/haxcss.json"
+      },
+      {
+        "language": "scss",
+        "path": "./snippets/haxcss.json"
+      }
+    ]
+  },
+  "__metadata": {
+    "size": 12186,
+    "installedTimestamp": 1742335957785
+  },
+  "dependencies": {
+    "@vscode/vsce": "^3.3.0"
+  }
+}
